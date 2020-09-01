@@ -5,7 +5,7 @@ var http = require('http')
 var server = http.createServer()
 var hls = new HLSServer(server, {
   path: '/stream',     // Base URI to output HLS streams
-  dir: '/home/ubuntu/ininitelofi-dev/output'  // Directory that input files are stored
+  dir: '/usr/src/hls-server/hls'  // Directory that input files are stored
 })
 server.listen(8000)
 /*

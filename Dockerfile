@@ -14,6 +14,6 @@ COPY app.js package.json package-lock.json ./
 
 RUN npm install
 
-WORKDIR /usr/src/output
+WORKDIR /usr/src/hls-server/hls
 
 ADD hls/ ./
